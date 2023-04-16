@@ -1,0 +1,72 @@
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  a {
+    padding: 13px 0 13px 34px;
+    font-weight: 500;
+    line-height: 20px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 17px;
+      padding-left: 24px;
+    }
+  }
+}
+
+.nav__button {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    cursor: pointer;
+    padding: 12px;
+  }
+}
+
+.nav__button::before,
+.nav__button::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $primary-color;
+
+  box-shadow: 0 6px 0 $primary-color;
+}
+
+.nav__button::after {
+  top: 6px;
+}
+
+.is-open .nav__button {
+  z-index: 10;
+}
+
+.is-open .nav__button::before,
+.is-open .nav__button::after {
+  background-color: $secondary-color;
+  transform: rotate(45deg);
+  box-shadow: unset;
+  width: 18px;
+  top: 5px;
+  left: 10px;
+}
+
+.is-open .nav__button::after {
+  transform: rotate(-45deg);
+}

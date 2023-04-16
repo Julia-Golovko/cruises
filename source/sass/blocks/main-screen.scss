@@ -1,0 +1,51 @@
+.main-screen {
+  background-image: url("../img/background-main-desktop.jpg");
+  background-color: #007aff;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include vp-1023 {
+    background-image: url("../img/background-main-tablet.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/background-main-mobile.jpg");
+  }
+}
+
+.main-screen__wrapper {
+  padding: 269px 100px 283px 95px;
+
+  @include vp-1023 {
+    padding: 268px 89px 274px 0;
+  }
+
+  @include vp-767 {
+    padding: 176px 25px 180px 0;
+  }
+
+  .main-screen__title {
+    margin: 0 0 13px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include vp-767 {
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}

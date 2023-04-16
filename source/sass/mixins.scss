@@ -1,3 +1,14 @@
+@mixin fonts($font-family, $name, $weight) {
+  @font-face {
+    font-style: normal;
+    font-weight: $weight;
+    font-family: #{$font-family};
+
+    font-display: swap;
+    src: url("../fonts/#{$name}.woff2") format("woff2"), url("../fonts/#{$name}.woff") format("woff");
+  }
+}
+
 @mixin retina {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     @content;
