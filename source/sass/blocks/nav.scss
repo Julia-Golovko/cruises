@@ -1,13 +1,17 @@
 .nav__list {
   display: flex;
   list-style-type: none;
-  margin: 0;
+  margin: 0 -17px 0 0;
   padding: 0;
   flex-wrap: wrap;
   justify-content: flex-end;
 
+  @include vp-1023 {
+    margin-right: -12px;
+  }
+
   a {
-    padding: 13px 0 13px 34px;
+    padding: 13px 17px 13px 17px;
     font-weight: 500;
     line-height: 20px;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -15,7 +19,7 @@
     @include vp-1023 {
       font-size: 14px;
       line-height: 17px;
-      padding-left: 24px;
+      padding: 13px 12px 13px 12px;
     }
   }
 }

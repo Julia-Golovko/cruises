@@ -32,4 +32,8 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+
+  @include vp-1023 {
+    line-height: 144%;
+  }
 }
