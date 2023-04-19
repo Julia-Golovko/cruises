@@ -3,14 +3,14 @@
 }
 
 .catalog__wrapper {
-  padding: 84px 15px;
+  padding: 84px 15px 120px;
 
   @include vp-1023 {
-    padding: 90px 10px;
+    padding: 90px 10px 100px;
   }
 
   @include vp-767 {
-    padding: 57px 10px;
+    padding: 57px 10px 65px;
   }
 }
 
@@ -40,6 +40,7 @@
 .catalog__list-item {
   background-color: #011c40;
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 35px;
   width: 260px;
   height: 386px;
@@ -53,11 +54,19 @@
 
   @include vp-767 {
     max-width: 288px;
-    background-position: -20px;
   }
 
   &--astoria {
     background-image: url("../img/catalog/astoria.jpg");
+    background-position: -23px;
+
+    @include vp-1023 {
+      background-position: unset;
+    }
+
+    @include vp-767 {
+      background-position: -19px;
+    }
   }
 
   &--elaine {
@@ -66,26 +75,80 @@
 
   &--atlantis {
     background-image: url("../img/catalog/atlantis.jpg");
+    background-position: -24px;
+
+    @include vp-1023 {
+      background-position: unset;
+    }
+
+    @include vp-767 {
+      background-position: -20px;
+    }
   }
 
   &--odysseus {
     background-image: url("../img/catalog/odysseus.jpg");
+    background-position: -21px -4px;
+    background-size: 290px;
+
+    @include vp-1023 {
+      background-position: unset;
+      background-size: unset;
+    }
+
+    @include vp-767 {
+      background-image: url("../img/catalog/odysseus-mobile.jpg");
+    }
   }
 
   &--olimpia {
-    background-image: url("../img/catalog/olimpia.jpg");
+    background-image: url("../img/catalog/olimpia-desktop.jpg");
+
+    @include vp-1023 {
+      background-image: url("../img/catalog/olimpia-tablet.jpg");
+    }
+
+    @include vp-767 {
+      background-image: url("../img/catalog/olimpia-mobile.jpg");
+    }
   }
 
   &--aurora {
     background-image: url("../img/catalog/aurora.jpg");
+    background-position: -4px;
+
+    @include vp-1023 {
+      background-position: unset;
+    }
+
+    @include vp-767 {
+      background-position: -20px;
+    }
   }
 
   &--leonor {
     background-image: url("../img/catalog/leonor.jpg");
+    background-position: -22px;
+
+    @include vp-1023 {
+      background-position: unset;
+    }
+
+    @include vp-767 {
+      background-position: -20px;
+    }
   }
 
   &--minion {
-    background-image: url("../img/catalog/minion.jpg");
+    background-image: url("../img/catalog/minion-desktop.jpg");
+
+    @include vp-1023 {
+      background-image: url("../img/catalog/minion-tablet.jpg");
+    }
+
+    @include vp-767 {
+      background-image: url("../img/catalog/minion-mobile.jpg");
+    }
   }
 }
 
@@ -98,8 +161,12 @@
   height: 100%;
   padding: 35px 25px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   @include vp-1023 {
-    padding: 35px 35px;
+    padding: 35px 35px 34px;
   }
 
   @include vp-767 {
@@ -148,8 +215,7 @@
 }
 
 .catalog__item-list {
-  margin-top: 35px;
-  margin-bottom: 24px;
+  margin: 35px 0 0;
 
   dt {
     font-size: 14px;
@@ -164,17 +230,4 @@
     margin-left: 0;
     color: #d8d8d9;
   }
-}
-
-.catalog__button {
-  display: block;
-  background-color: $primary-color;
-  border: none;
-  padding: 10px;
-  font-size: 14px;
-  line-height: 150%;
-  font-weight: 600;
-  color: #011c40;
-  width: 100%;
-  text-align: center;
 }

@@ -21,10 +21,10 @@
         <button class="nav__button" data-burger></button>
         <nav class="header__nav nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#advantages">Преимущества</a></li>
-            <li class="nav__item"><a href="#">Направления</a></li>
-            <li class="nav__item"><a href="#cruises">Ближайшие круизы</a></li>
-            <li class="nav__item"><a href="#contacts">Контакты</a></li>
+            <li class="nav__item"><a href="#advantages" data-close-menu>Преимущества</a></li>
+            <li class="nav__item"><a href="#" data-close-menu>Направления</a></li>
+            <li class="nav__item"><a href="#cruises" data-close-menu>Ближайшие круизы</a></li>
+            <li class="nav__item"><a href="#contacts" data-close-menu>Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -95,7 +95,7 @@
         </div>
       </div>
     </section>
-    <section class="main__catalog catalog">
+    <section class="main__catalog catalog" id="cruises">
       <div class="container">
         <div class="catalog__wrapper">
           <h2 class="catalog__title title">Ближайшие круизы</h2>
@@ -113,7 +113,7 @@
                   <dt>Цена</dt>
                   <dd>от 11500 $</dd>
                 </dl>
-                <a href="#" class="catalog__button">Забронировать</a>
+                <a href="#" class="catalog__button button">Забронировать</a>
               </div>
             </li>
             <li class="catalog__list-item catalog__list-item--elaine">
@@ -129,7 +129,7 @@
                   <dt>Цена</dt>
                   <dd>от 14500 $</dd>
                 </dl>
-                <a href="#" class="catalog__button">Забронировать</a>
+                <a href="#" class="catalog__button button">Забронировать</a>
               </div>
             </li>
             <li class="catalog__list-item catalog__list-item--atlantis">
@@ -145,7 +145,7 @@
                   <dt>Цена</dt>
                   <dd>от 14500 $</dd>
                 </dl>
-                <a href="#" class="catalog__button">Забронировать</a>
+                <a href="#" class="catalog__button button">Забронировать</a>
               </div>
             </li>
             <li class="catalog__list-item catalog__list-item--odysseus">
@@ -161,7 +161,7 @@
                   <dt>Цена</dt>
                   <dd>от 9700 $</dd>
                 </dl>
-                <a href="#" class="catalog__button">Забронировать</a>
+                <a href="#" class="catalog__button button">Забронировать</a>
               </div>
             </li>
             <li class="catalog__list-item catalog__list-item--olimpia">
@@ -177,7 +177,7 @@
                   <dt>Цена</dt>
                   <dd>от 18600 $</dd>
                 </dl>
-                <a href="#" class="catalog__button">Забронировать</a>
+                <a href="#" class="catalog__button button">Забронировать</a>
               </div>
             </li>
             <li class="catalog__list-item catalog__list-item--aurora">
@@ -193,7 +193,7 @@
                   <dt>Цена</dt>
                   <dd>от 11700 $</dd>
                 </dl>
-                <a href="#" class="catalog__button">Забронировать</a>
+                <a href="#" class="catalog__button button">Забронировать</a>
               </div>
             </li>
             <li class="catalog__list-item catalog__list-item--leonor">
@@ -209,7 +209,7 @@
                   <dt>Цена</dt>
                   <dd>от 12500 $</dd>
                 </dl>
-                <a href="#" class="catalog__button">Забронировать</a>
+                <a href="#" class="catalog__button button">Забронировать</a>
               </div>
             </li>
             <li class="catalog__list-item catalog__list-item--minion">
@@ -225,10 +225,48 @@
                   <dt>Цена</dt>
                   <dd>от 12300  $</dd>
                 </dl>
-                <a href="#" class="catalog__button">Забронировать</a>
+                <a href="#" class="catalog__button button">Забронировать</a>
               </div>
             </li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section class="main__booking booking">
+      <div class="container">
+        <div class="booking__wrapper">
+          <div class="booking__text-wrapper">
+            <h2 class="booking__title">Раннее бронирование</h2>
+            <p class="booking__desc">Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев
+            до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+          </div>
+          <div data-form-validate data-callback="base">
+            <form class="booking__form form" action="https://echo.htmlacademy.ru/" method="post">
+              <h3 class="form__title--mini title--mini">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
+              <div class="form__inputs-wrapper">
+                <label for="name" data-validate-type="text" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-limitation="letters" data-required>
+                  <span class="visually-hidden">Имя</span>
+                  <input type="text" id="name" name="name" placeholder="Имя">
+                </label>
+                <label for="phone" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <span class="visually-hidden">Телефон</span>
+                  <input type="tel" id="phone" name="phone" placeholder="Телефон">
+                </label>
+                <label for="email" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <span class="visually-hidden">Email</span>
+                  <input type="tel" id="email" name="email" placeholder="Email">
+                </label>
+              </div>
+              <div class="form__buttons-wrapper">
+                <label for="agreement" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
+                  <input class="visually-hidden" type="checkbox" id="agreement" name="agreement">
+                  <span class="form__checkbox"></span>
+                  Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных
+                </label>
+                <button class="form__button button" type="submit">Оставить заявку</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>

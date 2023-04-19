@@ -32,10 +32,12 @@
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 4px;
-    right: 0;
+    top: -8px;
+    right: -10px;
     cursor: pointer;
-    padding: 12px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
   }
 }
 
@@ -44,8 +46,8 @@
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 18px;
+  left: 7px;
   width: 24px;
   height: 2px;
   background-color: $primary-color;
@@ -54,11 +56,13 @@
 }
 
 .nav__button::after {
-  top: 6px;
+  top: 12px;
 }
 
 .is-open .nav__button {
   z-index: 10;
+  top: -21px;
+  right: -15px;
 }
 
 .is-open .nav__button::before,
@@ -67,8 +71,8 @@
   transform: rotate(45deg);
   box-shadow: unset;
   width: 18px;
-  top: 5px;
-  left: 10px;
+  top: 50%;
+  left: calc(50% - 8px);
 }
 
 .is-open .nav__button::after {

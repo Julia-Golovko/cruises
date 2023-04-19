@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  padding: 10px;
+
+  color: #011c40;
+
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 600;
+
+  width: 100%;
+  text-align: center;
+
+  background-color: $primary-color;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
