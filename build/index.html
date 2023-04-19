@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Описание проекта">
+  <title>ProjectName</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper" data-header>
+        <a href="#" class="header__link">
+          <svg width="70" height="38" role="img" fill="currentColor">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="nav__button" data-burger></button>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#advantages" data-close-menu>Преимущества</a></li>
+            <li class="nav__item"><a href="#" data-close-menu>Направления</a></li>
+            <li class="nav__item"><a href="#cruises" data-close-menu>Ближайшие круизы</a></li>
+            <li class="nav__item"><a href="#contacts" data-close-menu>Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__main-screen main-screen">
+      <div class="container">
+        <div class="main-screen__wrapper">
+          <h1 class="main-screen__title title--big">Круизы в&nbsp;Антарктику</h1>
+          <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+        </div>
+      </div>
+    </section>
+    <section class="main__adventure adventure">
+      <div class="container">
+        <div class="adventure__wrapper">
+          <div class="adventure__text-wrapper">
+            <h2 class="adventure__title title">Путешествие на&nbsp;край&nbsp;Земли</h2>
+            <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики.
+              Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги,
+              несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+          </div>
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/penguins-mobile@1x.webp 1x, img/penguins-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/penguins-tablet@1x.webp, img/penguins-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/penguins-desktop@1x.webp 1x, img/penguins-desktop@2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/penguins-mobile@1x.jpg 1x, img/penguins-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/penguins-tablet@1x.jpg 1x, img/penguins-tablet@2x.jpg 2x">
+            <img src="img/penguins-desktop@1x.jpg" srcset="img/penguins-desktop@1x.jpg 1x, img/penguins-desktop@2x.jpg 2x" width="560" height="301" alt="Пингвины на снегу">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="main__advantages advantages" id="advantages">
+      <div class="container">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title title">Преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__list-item">
+              <svg width="27" height="32" role="img" fill="currentColor">
+                <use xlink:href="img/sprite.svg#liner"></use>
+              </svg>
+              <h3 class="advantages__title--mini title--mini">Небольшой круизный лайнер</h3>
+              <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей,
+                поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+            </li>
+            <li class="advantages__list-item">
+              <svg width="38" height="32" role="img" fill="currentColor">
+                <use xlink:href="img/sprite.svg#allinclusive"></use>
+              </svg>
+              <h3 class="advantages__title--mini title--mini">Система все&nbsp;включено</h3>
+              <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;.
+                Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+            </li>
+            <li class="advantages__list-item">
+              <svg width="44" height="32" role="img" fill="currentColor">
+                <use xlink:href="img/sprite.svg#zodiac"></use>
+              </svg>
+              <h3 class="advantages__title--mini title--mini">Экскурсионные туры&nbsp;на&nbsp;Zodiac</h3>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются
+                на&nbsp;оборудованных лодках типа Zodiac c&nbsp;опытными экскурсоводами.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="main__catalog catalog" id="cruises">
+      <div class="container">
+        <div class="catalog__wrapper">
+          <h2 class="catalog__title title">Ближайшие круизы</h2>
+          <ul class="catalog__list">
+            <li class="catalog__list-item catalog__list-item--astoria">
+              <h3 class="catalog__item-title title--mini">Круиз “Астория”</h3>
+              <div class="catalog__item-wrapper">
+                <dl class="catalog__item-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Фолклендские острова - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd> Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>11 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 11500 $</dd>
+                </dl>
+                <a href="#" class="catalog__button button">Забронировать</a>
+              </div>
+            </li>
+            <li class="catalog__list-item catalog__list-item--elaine">
+              <h3 class="catalog__item-title title--mini">Круиз “Элайн”</h3>
+              <div class="catalog__item-wrapper">
+                <dl class="catalog__item-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Буэнос-Айрес</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>20 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 14500 $</dd>
+                </dl>
+                <a href="#" class="catalog__button button">Забронировать</a>
+              </div>
+            </li>
+            <li class="catalog__list-item catalog__list-item--atlantis">
+              <h3 class="catalog__item-title title--mini">Круиз “Атлантис”</h3>
+              <div class="catalog__item-wrapper">
+                <dl class="catalog__item-list">
+                  <dt>Маршрут</dt>
+                  <dd> Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>15 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 14500 $</dd>
+                </dl>
+                <a href="#" class="catalog__button button">Забронировать</a>
+              </div>
+            </li>
+            <li class="catalog__list-item catalog__list-item--odysseus">
+              <h3 class="catalog__item-title title--mini">Круиз “Одиссей”</h3>
+              <div class="catalog__item-wrapper">
+                <dl class="catalog__item-list">
+                  <dt>Маршрут</dt>
+                  <dd>Чили - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Пунта-Аренас</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>13 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 9700 $</dd>
+                </dl>
+                <a href="#" class="catalog__button button">Забронировать</a>
+              </div>
+            </li>
+            <li class="catalog__list-item catalog__list-item--olimpia">
+              <h3 class="catalog__item-title title--mini">Круиз “Олимпия”</h3>
+              <div class="catalog__item-wrapper">
+                <dl class="catalog__item-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>21 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 18600 $</dd>
+                </dl>
+                <a href="#" class="catalog__button button">Забронировать</a>
+              </div>
+            </li>
+            <li class="catalog__list-item catalog__list-item--aurora">
+              <h3 class="catalog__item-title title--mini">Круиз “Аврора”</h3>
+              <div class="catalog__item-wrapper">
+                <dl class="catalog__item-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Антарктида - Чили</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>14 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 11700 $</dd>
+                </dl>
+                <a href="#" class="catalog__button button">Забронировать</a>
+              </div>
+            </li>
+            <li class="catalog__list-item catalog__list-item--leonor">
+              <h3 class="catalog__item-title title--mini">Круиз “Леонор”</h3>
+              <div class="catalog__item-wrapper">
+                <dl class="catalog__item-list">
+                  <dt>Маршрут</dt>
+                  <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Пунта-Аренас</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>17 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 12500 $</dd>
+                </dl>
+                <a href="#" class="catalog__button button">Забронировать</a>
+              </div>
+            </li>
+            <li class="catalog__list-item catalog__list-item--minion">
+              <h3 class="catalog__item-title title--mini">Круиз “Минион - 1”</h3>
+              <div class="catalog__item-wrapper">
+                <dl class="catalog__item-list">
+                  <dt>Маршрут</dt>
+                  <dd>Аргентина - Антарктида</dd>
+                  <dt>Порт отправления</dt>
+                  <dd>Ушуайя</dd>
+                  <dt>Продолжительность</dt>
+                  <dd>11 дней</dd>
+                  <dt>Цена</dt>
+                  <dd>от 12300  $</dd>
+                </dl>
+                <a href="#" class="catalog__button button">Забронировать</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="main__booking booking">
+      <div class="container">
+        <div class="booking__wrapper">
+          <div class="booking__text-wrapper">
+            <h2 class="booking__title">Раннее бронирование</h2>
+            <p class="booking__desc">Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев
+            до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+          </div>
+          <div data-form-validate data-callback="base">
+            <form class="booking__form form" action="https://echo.htmlacademy.ru/" method="post">
+              <h3 class="form__title--mini title--mini">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
+              <div class="form__inputs-wrapper">
+                <label for="name" data-validate-type="text" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-limitation="letters" data-required>
+                  <span class="visually-hidden">Имя</span>
+                  <input type="text" id="name" name="name" placeholder="Имя">
+                </label>
+                <label for="phone" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <span class="visually-hidden">Телефон</span>
+                  <input type="tel" id="phone" name="phone" placeholder="Телефон">
+                </label>
+                <label for="email" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <span class="visually-hidden">Email</span>
+                  <input type="tel" id="email" name="email" placeholder="Email">
+                </label>
+              </div>
+              <div class="form__buttons-wrapper">
+                <label for="agreement" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
+                  <input class="visually-hidden" type="checkbox" id="agreement" name="agreement">
+                  <span class="form__checkbox"></span>
+                  Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных
+                </label>
+                <button class="form__button button" type="submit">Оставить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a href="#" class="footer__link">
+          <svg width="70" height="38" role="img" fill="currentColor">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#advantages">Преимущества</a></li>
+            <li class="nav__item"><a href="#">Направления</a></li>
+            <li class="nav__item"><a href="#cruises">Ближайшие круизы</a></li>
+            <li class="nav__item"><a href="#contacts">Контакты</a></li><li class="nav__item">
+          </ul>
+        </nav>
+        <ul class="footer__socials socials">
+          <li>
+            <a href="https://ok.ru/">
+              <svg width="12" height="20" role="img" fill="currentColor">
+                <use xlink:href="img/sprite.svg#ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://dzen.ru/">
+              <svg width="20" height="20" role="img" fill="currentColor">
+                <use xlink:href="img/sprite.svg#dzen"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/">
+              <svg width="20" height="20" role="img" fill="currentColor">
+                <use xlink:href="img/sprite.svg#reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- Модалки -->
+<!--<div class=" modal modal&#45;&#45;preload" data-modal="feedback">-->
+                  <!--  <div class="modal__wrapper">-->
+                  <!--    <div class="modal__overlay" data-close-modal></div>-->
+                  <!--    <div class="modal__content">-->
+                  <!--      <p class="modal__description">Обычная модалка</p>-->
+                  <!--      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>-->
+                  <!--        <svg width="15" height="15">-->
+                  <!--          <use xlink:href="img/sprite.svg#icon-close"></use>-->
+                  <!--        </svg>-->
+                  <!--      </button>-->
+                  <!--    </div>-->
+                  <!--  </div>-->
+                  <!--</div>-->
+
+                  <!--<div class="modal modal&#45;&#45;preload modal&#45;&#45;fit-content modal&#45;&#45;no-scale" data-modal="success">-->
+                  <!--  <div class="modal__wrapper">-->
+                  <!--    <div class="modal__overlay" data-close-modal></div>-->
+                  <!--    <div class="modal__content">-->
+                  <!--      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>-->
+                  <!--      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>-->
+                  <!--        <svg width="15" height="15">-->
+                  <!--          <use xlink:href="img/sprite.svg#icon-close"></use>-->
+                  <!--        </svg>-->
+                  <!--      </button>-->
+                  <!--    </div>-->
+                  <!--  </div>-->
+                  <!--</div>-->
+
+                  <script src="js/vendor.min.js"></script>
+                  <script src="js/main.min.js"></script>
+</body>
+</html>
