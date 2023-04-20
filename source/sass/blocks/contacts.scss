@@ -1,0 +1,107 @@
+.contacts {
+  background-image: $primary-color;
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 560px 1fr;
+  padding: 120px 0;
+  gap: 100px;
+  color: $secondary-color;
+
+  @include vp-1023 {
+    padding: 100px 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    padding: 57px 0 71px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.contacts__map-image {
+  display: none;
+}
+
+.contacts__map-image.nojs {
+  display: block;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 306px;
+
+  @include vp-1023 {
+    margin-right: 30px;
+    height: 335px;
+  }
+
+  @include vp-767 {
+    height: 316px;
+    order: 10;
+  }
+
+  iframe {
+    @include vp-1023 {
+      width: 100%;
+      height: 335px;
+    }
+
+    @include vp-767 {
+      height: 316px;
+    }
+  }
+}
+
+.contacts__desc {
+  display: flex;
+  gap: 23px;
+  flex-direction: column;
+  justify-content: center;
+
+  @include vp-1023 {
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 66px;
+  }
+
+  @include vp-767 {
+    gap: 21px;
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0 0 8px;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 500;
+
+    @include vp-767 {
+      margin-bottom: 7px;
+    }
+  }
+
+  a {
+    color: $secondary-color;
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 10px;
+
+    @include vp-1023 {
+      padding-right: 40px;
+    }
+
+    @include vp-767 {
+      padding-right: 0;
+    }
+
+    svg {
+      @include vp-1023 {
+        margin-top: 3px;
+      }
+    }
+  }
+}

@@ -23,6 +23,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+    const nojs = document.querySelector(".nojs");
+
+    if (nojs) {
+      nojs.classList.remove("nojs");
+    }
   });
 });
 

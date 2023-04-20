@@ -2,6 +2,7 @@
   background-image: url("../img/booking-desktop.jpg");
   background-color: #aed6fa;
   background-size: cover;
+  background-position: 50% 100%;
 
   @include vp-1023 {
     background-image: url("../img/booking-tablet.jpg");
@@ -9,6 +10,7 @@
 
   @include vp-767 {
     background-image: url("../img/booking-mobile.jpg");
+    background-position: 50% 55%;
   }
 }
 
@@ -55,11 +57,11 @@
   line-height: 150%;
 
   margin: 0;
-  padding-right: 177px;
+  padding-right: 250px;
 
   @include vp-1023 {
     text-align: center;
-    padding: 0 30px;
+    padding: 0 47px;
     margin-bottom: 52px;
   }
 
