@@ -700,7 +700,7 @@ button,
 }
 
 .main-screen {
-  background-image: url("../img/background-main-desktop.jpg");
+  background-image: url("../img/background-main-desktop@1x.webp");
   background-color: #007aff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -902,6 +902,12 @@ button,
   background-size: cover;
 }
 
+@supports (background-image: url("../img/background-advantages-desktop@1x.webp")) {
+  .advantages {
+    background-image: url("../img/background-advantages-desktop@1x.webp");
+  }
+}
+
 .advantages__wrapper {
   padding: 110px 0 120px;
   color: #011c40;
@@ -987,13 +993,31 @@ button,
   background-position: -23px;
 }
 
+@supports (background-image: url("../img/catalog/astoria.webp")) {
+  .catalog__list-item--astoria {
+    background-image: url("../img/catalog/astoria.webp");
+  }
+}
+
 .catalog__list-item--elaine {
   background-image: url("../img/catalog/elaine.jpg");
+}
+
+@supports (background-image: url("../img/catalog/elaine.webp")) {
+  .catalog__list-item--elaine {
+    background-image: url("../img/catalog/elaine.webp");
+  }
 }
 
 .catalog__list-item--atlantis {
   background-image: url("../img/catalog/atlantis.jpg");
   background-position: -24px;
+}
+
+@supports (background-image: url("../img/catalog/atlantis.webp")) {
+  .catalog__list-item--atlantis {
+    background-image: url("../img/catalog/atlantis.webp");
+  }
 }
 
 .catalog__list-item--odysseus {
@@ -1002,8 +1026,20 @@ button,
   background-size: 290px;
 }
 
+@supports (background-image: url("../img/catalog/odysseus.webp")) {
+  .catalog__list-item--odysseus {
+    background-image: url("../img/catalog/odysseus.webp");
+  }
+}
+
 .catalog__list-item--olimpia {
   background-image: url("../img/catalog/olimpia-desktop.jpg");
+}
+
+@supports (background-image: url("../img/catalog/olimpia-desktop.webp")) {
+  .catalog__list-item--olimpia {
+    background-image: url("../img/catalog/olimpia-desktop.webp");
+  }
 }
 
 .catalog__list-item--aurora {
@@ -1011,13 +1047,31 @@ button,
   background-position: -4px;
 }
 
+@supports (background-image: url("../img/catalog/aurora.webp")) {
+  .catalog__list-item--aurora {
+    background-image: url("../img/catalog/aurora.webp");
+  }
+}
+
 .catalog__list-item--leonor {
   background-image: url("../img/catalog/leonor.jpg");
   background-position: -22px;
 }
 
+@supports (background-image: url("../img/catalog/leonor.webp")) {
+  .catalog__list-item--leonor {
+    background-image: url("../img/catalog/leonor.webp");
+  }
+}
+
 .catalog__list-item--minion {
   background-image: url("../img/catalog/minion-desktop.jpg");
+}
+
+@supports (background-image: url("../img/catalog/minion-desktop.webp")) {
+  .catalog__list-item--minion {
+    background-image: url("../img/catalog/minion-desktop.webp");
+  }
 }
 
 .catalog__item-wrapper {
@@ -1275,6 +1329,12 @@ button,
   .advantages {
     background-image: url("../img/background-advantages-desktop@2x.jpg");
   }
+
+@supports (background-image: url("../img/background-advantages-desktop@2x.webp")) {
+    .advantages {
+      background-image: url("../img/background-advantages-desktop@2x.webp");
+    }
+}
 }
 
 @media (max-width: 1023px) {
@@ -1298,7 +1358,7 @@ button,
   }
 
   .main-screen {
-    background-image: url("../img/background-main-tablet.jpg");
+    background-image: url("../img/background-main-tablet@1x.webp");
   }
 
   .main-screen__wrapper {
@@ -1402,6 +1462,12 @@ button,
     background-image: url("../img/background-advantages-tablet@1x.jpg");
   }
 
+@supports (background-image: url("../img/background-advantages-tablet@1x.webp")) {
+    .advantages {
+      background-image: url("../img/background-advantages-tablet@1x.webp");
+    }
+}
+
   .advantages__wrapper {
     padding: 90px 0 100px;
   }
@@ -1452,12 +1518,18 @@ button,
 
   .catalog__list-item--odysseus {
     background-position: unset;
-    background-size: unset;
+    background-size: cover;
   }
 
   .catalog__list-item--olimpia {
     background-image: url("../img/catalog/olimpia-tablet.jpg");
   }
+
+@supports (background-image: url("../img/catalog/olimpia-tablet.webp")) {
+    .catalog__list-item--olimpia {
+      background-image: url("../img/catalog/olimpia-tablet.webp");
+    }
+}
 
   .catalog__list-item--aurora {
     background-position: unset;
@@ -1470,6 +1542,12 @@ button,
   .catalog__list-item--minion {
     background-image: url("../img/catalog/minion-tablet.jpg");
   }
+
+@supports (background-image: url("../img/catalog/minion-tablet.webp")) {
+    .catalog__list-item--minion {
+      background-image: url("../img/catalog/minion-tablet.webp");
+    }
+}
 
   .catalog__item-wrapper {
     padding: 35px 35px 34px;
@@ -1520,9 +1598,19 @@ button,
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .main-screen {
+    background-image: url("../img/background-main-tablet@2x.webp");
+  }
+
   .advantages {
     background-image: url("../img/background-advantages-tablet@2x.jpg");
   }
+
+@supports (background-image: url("../img/background-advantages-tablet@2x.webp")) {
+    .advantages {
+      background-image: url("../img/background-advantages-tablet@2x.webp");
+    }
+}
 }
 
 @media (max-width: 767px) {
@@ -1589,7 +1677,7 @@ button,
   }
 
   .main-screen {
-    background-image: url("../img/background-main-mobile.jpg");
+    background-image: url("../img/background-main-mobile@1x.webp");
   }
 
   .main-screen__wrapper {
@@ -1691,6 +1779,12 @@ button,
     background-image: url("../img/background-advantages-mobile@1x.jpg");
   }
 
+@supports (background-image: url("../img/background-advantages-mobile@1x.webp")) {
+    .advantages {
+      background-image: url("../img/background-advantages-mobile@1x.webp");
+    }
+}
+
   .advantages__wrapper {
     padding: 57px 0 65px;
   }
@@ -1738,9 +1832,21 @@ button,
     background-image: url("../img/catalog/odysseus-mobile.jpg");
   }
 
+@supports (background-image: url("../img/catalog/odysseus-mobile.webp")) {
+    .catalog__list-item--odysseus {
+      background-image: url("../img/catalog/odysseus-mobile.webp");
+    }
+}
+
   .catalog__list-item--olimpia {
     background-image: url("../img/catalog/olimpia-mobile.jpg");
   }
+
+@supports (background-image: url("../img/catalog/olimpia-mobile.webp")) {
+    .catalog__list-item--olimpia {
+      background-image: url("../img/catalog/olimpia-mobile.webp");
+    }
+}
 
   .catalog__list-item--aurora {
     background-position: -20px;
@@ -1753,6 +1859,12 @@ button,
   .catalog__list-item--minion {
     background-image: url("../img/catalog/minion-mobile.jpg");
   }
+
+@supports (background-image: url("../img/catalog/minion-mobile.webp")) {
+    .catalog__list-item--minion {
+      background-image: url("../img/catalog/minion-mobile.webp");
+    }
+}
 
   .catalog__item-wrapper {
     padding: 35px 25px;
@@ -1817,13 +1929,29 @@ button,
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .main-screen {
+    background-image: url("../img/background-main-mobile@2x.webp");
+  }
+
   .advantages {
     background-image: url("../img/background-advantages-mobile@2x.jpg");
   }
+
+@supports (background-image: url("../img/background-advantages-mobile@2x.webp")) {
+    .advantages {
+      background-image: url("../img/background-advantages-mobile@2x.webp");
+    }
+}
 }
 
 @media (hover: hover) {
   .button:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .main-screen {
+    background-image: url("../img/background-main-desktop@2x.webp");
   }
 }

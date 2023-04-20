@@ -4,9 +4,11 @@
   <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Описание проекта">
-  <title>ProjectName</title>
+  <meta name="description" content="Круизы в Антарктику. Туры на край Земли.">
+  <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
 <div class="wrapper">
@@ -17,8 +19,9 @@
           <svg width="70" height="38" role="img" fill="currentColor">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
+          <span class="visually-hidden">Логотип Турагенства</span>
         </a>
-        <button class="nav__button" data-burger></button>
+        <button class="nav__button" aria-label="Кнопка навигации" data-burger></button>
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item"><a href="#advantages" data-close-menu>Преимущества</a></li>
@@ -278,6 +281,7 @@
           <svg width="70" height="38" role="img" fill="currentColor">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
+          <span class="visually-hidden">Логотип Турагенства</span>
         </a>
         <nav class="footer__nav nav">
           <ul class="nav__list">
@@ -293,6 +297,7 @@
               <svg width="12" height="20" role="img" fill="currentColor">
                 <use xlink:href="img/sprite.svg#ok"></use>
               </svg>
+              <span class="visually-hidden">Мы в Одноклассниках</span>
             </a>
           </li>
           <li>
@@ -300,6 +305,7 @@
               <svg width="20" height="20" role="img" fill="currentColor">
                 <use xlink:href="img/sprite.svg#dzen"></use>
               </svg>
+              <span class="visually-hidden">Мы на Яндекс Дзен</span>
             </a>
           </li>
           <li>
@@ -307,6 +313,7 @@
               <svg width="20" height="20" role="img" fill="currentColor">
                 <use xlink:href="img/sprite.svg#reddit"></use>
               </svg>
+              <span class="visually-hidden">Мы на Реддит</span>
             </a>
           </li>
         </ul>

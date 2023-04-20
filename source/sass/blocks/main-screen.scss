@@ -1,15 +1,51 @@
 .main-screen {
-  background-image: url("../img/background-main-desktop.jpg");
+  background-image: url("../img/background-main-desktop@1x.webp");
   background-color: #007aff;
   background-repeat: no-repeat;
   background-size: cover;
 
+  //@supports (background-image: url("../img/background-main-desktop@1x.webp")) {
+  //  background-image: url("../img/background-main-desktop@1x.webp");
+  //}
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-main-desktop@2x.webp");
+
+    //@supports (background-image: url("../img/background-main-desktop@2x.webp")) {
+    //  background-image: url("../img/background-main-desktop@2x.webp");
+    //}
+  }
+
   @include vp-1023 {
-    background-image: url("../img/background-main-tablet.jpg");
+    background-image: url("../img/background-main-tablet@1x.webp");
+
+    //@supports (background-image: url("../img/background-main-tablet@1x.webp")) {
+    //  background-image: url("../img/background-main-tablet@1x.webp");
+    //}
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-main-tablet@2x.webp");
+
+      //@supports (background-image: url("../img/background-main-tablet@2x.webp")) {
+      //  background-image: url("../img/background-main-tablet@2x.webp");
+      //}
+    }
   }
 
   @include vp-767 {
-    background-image: url("../img/background-main-mobile.jpg");
+    background-image: url("../img/background-main-mobile@1x.webp");
+
+    //@supports (background-image: url("../img/background-main-mobile@1x.webp")) {
+    //  background-image: url("../img/background-main-mobile@1x.webp");
+    //}
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-main-mobile@2x.webp");
+
+      //@supports (background-image: url("../img/background-main-mobile@2x.webp")) {
+      //  background-image: url("../img/background-main-mobile@2x.webp");
+      //}
+    }
   }
 }
 

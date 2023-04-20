@@ -4,23 +4,47 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @supports (background-image: url("../img/background-advantages-desktop@1x.webp")) {
+    background-image: url("../img/background-advantages-desktop@1x.webp");
+  }
+
   @media (min-resolution: 2dppx), (min-width: 1024px) {
     background-image: url("../img/background-advantages-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/background-advantages-desktop@2x.webp")) {
+      background-image: url("../img/background-advantages-desktop@2x.webp");
+    }
   }
 
   @include vp-1023 {
     background-image: url("../img/background-advantages-tablet@1x.jpg");
 
+    @supports (background-image: url("../img/background-advantages-tablet@1x.webp")) {
+      background-image: url("../img/background-advantages-tablet@1x.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-advantages-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/background-advantages-tablet@2x.webp")) {
+        background-image: url("../img/background-advantages-tablet@2x.webp");
+      }
     }
   }
 
   @include vp-767 {
     background-image: url("../img/background-advantages-mobile@1x.jpg");
 
+    @supports (background-image: url("../img/background-advantages-mobile@1x.webp")) {
+      background-image: url("../img/background-advantages-mobile@1x.webp");
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-advantages-mobile@2x.jpg");
+
+      @supports (background-image: url("../img/background-advantages-mobile@2x.webp")) {
+        background-image: url("../img/background-advantages-mobile@2x.webp");
+      }
     }
   }
 }
