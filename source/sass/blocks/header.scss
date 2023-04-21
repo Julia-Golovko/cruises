@@ -79,9 +79,9 @@
 
     ul {
       flex-direction: column;
-      gap: 26px;
+      gap: 8px;
       margin-left: 15px;
-      margin-top: 85px;
+      margin-top: 75px;
 
       a {
         color: $secondary-color;
@@ -89,6 +89,7 @@
         padding: 10px;
         font-size: 18px;
         line-height: 22px;
+        width: fit-content;
       }
     }
   }

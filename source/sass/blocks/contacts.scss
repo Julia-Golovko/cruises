@@ -89,6 +89,12 @@
     display: grid;
     grid-template-columns: 18px 1fr;
     gap: 10px;
+    width: fit-content;
+
+    &:hover,
+    &:active {
+      text-shadow: 0 0 6px #007aff;
+    }
 
     @include vp-1023 {
       padding-right: 40px;

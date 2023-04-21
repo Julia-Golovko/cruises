@@ -5,16 +5,18 @@
   padding: 0;
   flex-wrap: wrap;
   justify-content: flex-end;
+  max-width: 700px;
+
 
   @include vp-1023 {
     margin-right: -12px;
+    max-width: 540px;
   }
 
   a {
     padding: 13px 17px 13px 17px;
     font-weight: 500;
     line-height: 20px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
     @include vp-1023 {
       font-size: 14px;
@@ -38,6 +40,17 @@
     width: 40px;
     height: 40px;
     padding: 10px;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #007aff;
+    box-shadow: 0 6px 0 #007aff;
+  }
+
+  &:focus {
+    outline: 2px solid #007aff;
+    border-radius: 10px;
   }
 }
 
@@ -63,6 +76,11 @@
   z-index: 10;
   top: -21px;
   right: -15px;
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #007aff;
+  }
 }
 
 .is-open .nav__button::before,

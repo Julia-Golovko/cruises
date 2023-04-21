@@ -56,6 +56,16 @@
       font-size: 14px;
       line-height: 150%;
     }
+
+    &:hover,
+    &:active {
+      background-color: #a7d0fa;
+    }
+
+    &:focus {
+      outline: 2px solid #007aff;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -92,11 +102,22 @@
       width: 18px;
       height: 18px;
       left: 0;
+      cursor: pointer;
 
       @include vp-767 {
         width: 20px;
         height: 20px;
       }
+
+      &:hover,
+      &:active {
+        background-color: #a7d0fa;
+      }
+    }
+
+    input:focus + .form__checkbox {
+      outline: 2px solid #007aff;
+      border-radius: 5px;
     }
 
     input:checked + span::before {

@@ -31,12 +31,10 @@
   }
 
   ul {
-    max-width: 700px;
     margin-left: 16px;
     justify-content: flex-start;
 
     @include vp-1023 {
-      max-width: 540px;
       margin-left: 13px;
     }
 

@@ -38,6 +38,25 @@ body {
 a {
   color: $primary-color;
   text-decoration: none;
+  display: block;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    text-shadow: 0 0 6px $primary-color;
+
+    svg {
+      filter: drop-shadow(0 0 6px $primary-color);
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid #007aff;
+    border-radius: 10px;
+  }
 }
 
 img,
