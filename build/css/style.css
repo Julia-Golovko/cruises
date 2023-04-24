@@ -685,7 +685,6 @@ button,
 .button.focus-visible:focus {
   opacity: 0.8;
   outline: 2px solid #007aff;
-  border-radius: 10px;
 }
 
 .header {
@@ -1222,7 +1221,7 @@ button,
   padding-right: 250px;
 }
 
-.form {
+.form__wrapper {
   padding: 44px 50px 50px;
   background-color: #011c40;
   color: #f9fbfd;
@@ -1419,47 +1418,6 @@ button,
 .contacts__desc a:active {
   text-shadow: 0 0 6px #007aff;
 }
-
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx), (min-width: 1024px) {
   .advantages {
@@ -2073,7 +2031,7 @@ button,
     margin-bottom: 33px;
   }
 
-  .form {
+  .form__wrapper {
     width: 91vw;
     padding: 34px 30px 40px;
   }
@@ -2158,7 +2116,6 @@ button,
   .button:hover:not(.focus-visible) {
     opacity: 0.8;
     outline: 2px solid #007aff;
-    border-radius: 10px;
   }
 }
 

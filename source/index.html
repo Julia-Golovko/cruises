@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Круизы в Антарктику. Туры на край Земли.">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -245,35 +245,37 @@
           </div>
           <div data-form-validate data-callback="base">
             <form class="booking__form form" action="https://echo.htmlacademy.ru/" method="post">
-              <h3 class="form__title--mini title--mini">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
-              <div class="form__inputs-wrapper">
-                <label for="name" data-validate-type="text" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-limitation="letters" data-required>
-                  <span class="visually-hidden">Имя</span>
-                  <input type="text" id="name" name="name" placeholder="Имя">
-                </label>
-                <label for="phone" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
-                  <span class="visually-hidden">Телефон</span>
-                  <input type="tel" id="phone" name="phone" placeholder="Телефон">
-                </label>
-                <label for="email" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
-                  <span class="visually-hidden">Email</span>
-                  <input type="tel" id="email" name="email" placeholder="Email">
-                </label>
-              </div>
-              <div class="form__buttons-wrapper">
-                <label for="agreement" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
-                  <input class="visually-hidden" type="checkbox" id="agreement" name="agreement">
-                  <span class="form__checkbox"></span>
-                  Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных
-                </label>
-                <button class="form__button button" type="submit">Оставить заявку</button>
+              <div class="form__wrapper">
+                <h3 class="form__title--mini title--mini">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
+                <div class="form__inputs-wrapper">
+                  <label for="name" data-validate-type="text" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-limitation="letters" data-required>
+                    <span class="visually-hidden">Имя</span>
+                    <input type="text" id="name" name="name" placeholder="Имя">
+                  </label>
+                  <label for="phone" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                    <span class="visually-hidden">Телефон</span>
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон">
+                  </label>
+                  <label for="email" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                    <span class="visually-hidden">Email</span>
+                    <input type="tel" id="email" name="email" placeholder="Email">
+                  </label>
+                </div>
+                <div class="form__buttons-wrapper">
+                  <label for="agreement" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
+                    <input class="visually-hidden" type="checkbox" id="agreement" name="agreement">
+                    <span class="form__checkbox"></span>
+                    Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных
+                  </label>
+                  <button class="form__button button" type="submit">Оставить заявку</button>
+                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
     </section>
-    <section class="main__contacts contacts">
+    <section class="main__contacts contacts" id="contacts">
       <div class="container">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
@@ -296,7 +298,7 @@
               У&nbsp;вас ещё остались вопросы или сомнения?
               Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.
             </p>
-            <a href="">
+            <a href="#">
               <svg width="18" height="22" role="img" fill="currentColor">
                 <use xlink:href="img/sprite.svg#map"></use>
               </svg>
