@@ -704,6 +704,7 @@ button,
   align-items: center;
   margin-top: 31px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .header__link {
@@ -713,7 +714,12 @@ button,
 .is-open .header__link {
   position: absolute;
   z-index: 10;
-  left: 36px;
+  left: 11.5vw;
+  padding: 10px;
+  width: 62px;
+  height: 42px;
+  margin-left: -10px;
+  background-color: #f9fbfd;
 }
 
 .main-screen {
@@ -1774,11 +1780,14 @@ button,
     background-color: #f9fbfd;
     position: fixed;
     top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
+    max-width: 89vw;
     margin-left: 21px;
-    -webkit-box-shadow: -50px 0 0 rgba(0, 43, 102, 0.5);
-    box-shadow: -50px 0 0 rgba(0, 43, 102, 0.5);
+    -webkit-box-shadow: -16vw 0 0 rgba(0, 43, 102, 0.5);
+    box-shadow: -16vw 0 0 rgba(0, 43, 102, 0.5);
+    overflow-y: scroll;
   }
 
   .is-open .header__nav ul {
@@ -1787,8 +1796,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 8px;
-    margin-left: 15px;
-    margin-top: 75px;
+    margin: 75px 15px 0;
   }
 
   .is-open .header__nav ul a {

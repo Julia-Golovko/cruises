@@ -9,6 +9,7 @@
   align-items: center;
   margin-top: 31px;
   position: relative;
+  margin-bottom: 20px;
 
   @include vp-1023 {
     margin-top: 28px;
@@ -55,7 +56,12 @@
 .is-open .header__link {
   position: absolute;
   z-index: 10;
-  left: 36px;
+  left: 11.5vw;
+  padding: 10px;
+  width: 62px;
+  height: 42px;
+  margin-left: -10px;
+  background-color: $primary-color;
 }
 
 .is-open .header__link svg {
@@ -72,16 +78,18 @@
     background-color: $primary-color;
     position: fixed;
     top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
+    max-width: 89vw;
     margin-left: 21px;
-    box-shadow: -50px 0 0 rgba(0, 43, 102, 0.5);
+    box-shadow: -16vw 0 0 rgba(0, 43, 102, 0.5);
+    overflow-y: scroll;
 
     ul {
       flex-direction: column;
       gap: 8px;
-      margin-left: 15px;
-      margin-top: 75px;
+      margin: 75px 15px 0;
 
       a {
         color: $secondary-color;
